@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  padding-bottom: 900px;
 }
 
 a {
@@ -130,7 +131,7 @@ header div.bottom div.left .coountainer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 3;
+  z-index: 1;
 }
 
 header div.bottom div.left .coountainer .top p{
@@ -151,7 +152,7 @@ header div.bottom div.left .coountainer img.circel{
   bottom: 300px;
   width: 150px;
   height: 81px;
-  z-index: 1;
+  z-index: 3;
 
 }
 
@@ -184,4 +185,22 @@ header div.bottom div.left .link span{
 header div.bottom div.right img{
   width: 100%;
   object-fit: cover;
+}
+
+header div.last {
+  padding-top: 40px;
+  background-color: #f4e0c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+
+header div.last h5{
+  font-size: 20px;
+  color: #f2654a;
+  margin:0px 0px 15px;
+  font-weight: bold;
+
 }
