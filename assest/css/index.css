@@ -1,0 +1,113 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.action_bar{
+    height: 45px;
+    color: #f2654a;
+    background-color: #6e2a36;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.action_bar span{
+    margin-left: -24px;
+    width: 1195px;
+}
+
+
+/* Header Style */
+
+
+header{
+    background-color: #f9f2e4;
+    color: #6e2a36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91px;
+}
+
+nav{
+    display: flex;
+    
+    align-items: center;
+}
+
+header nav div.left{
+    width: 942.5px;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 163px;
+    height: 40px;
+    /* margin-right: 20px; */
+    vertical-align: middle;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+header ul :first-child{
+    /* padding-left: 0; */
+}
+
+header ul li a{
+    color: #6e2a36;
+    font-weight: 700;
+}
+
+header ul li.active a{
+    color: #f2654a;
+}
+
+header nav div.right{
+    padding: 0px 20px;
+    display: flex;
+}
+
+header nav div.right i{
+    padding: 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+header nav div.right div{
+    margin: 0px 10px;
+    cursor: pointer;
+}
+header nav div.right div i{
+    padding: 0;
+}
+
+header nav div.right div span.heart-span{
+    margin-left: 2px;
+}
+
+header nav div.right div span{
+    vertical-align: top;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 11px;
+    background-color: #75973a;
+    border-radius: 50%;
+    color: #ffffff;
+    margin-top: -5px;
+}
