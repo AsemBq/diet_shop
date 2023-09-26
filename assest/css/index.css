@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: none;
 }
+h4{
+  margin: 0;
+}
 
 .action_bar {
   height: 45px;
@@ -230,4 +233,180 @@ header div.square{
   transform: rotate(45deg);
   background-color: #f4e0c9;
   z-index: 0;
+}
+
+
+/* Sections Style */
+
+section.first{
+  background-color: #f9f2e4;
+  display: flex;
+  justify-content: center;
+  padding:100px 0px;
+  margin-top: -75px;
+
+}
+
+section.first div.countainer{
+  width: 1220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.first div.countainer> h4{
+  font-size: 22px;
+  color: #6e2a36;
+  margin: 0px 0px 20px 25px;
+  align-self: flex-start;
+  font-weight: 800;
+}
+
+section.first div.countainer .sliders{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+}
+
+section.first div.countainer .sliders :last-child{
+  margin-right: 0;
+
+}
+
+section.first div.countainer .slider{
+  width: 30%;
+  margin-right: 20px;
+  background-color: #f0e7d8;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+}
+
+section.first div.countainer .slider img{
+  width: 100%;
+  object-fit: cover;
+  margin-top: -15px;
+}
+section.first div.countainer .slider .top span{
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #75973a;
+  padding: 3px 8px;
+  border-radius: 3px;
+  position: relative;
+  top: 25px;
+  left: 15px;
+  font-weight: bold;
+
+}
+
+section.first div.countainer .slider .bottom{
+  padding: 15px 20px;
+  background-color: #f0e7d8;
+  border-radius: 10px;
+}
+
+section.first div.countainer .slider .bottom h4{
+  margin-bottom: 10px;
+}
+
+section.first div.countainer .slider .bottom h4 a{
+  color: #6e2a36;
+  font-size: 22px;
+  font-weight: 800;
+
+}
+
+section.first div.countainer .slider .bottom span{
+  color: #75973a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
+section.first div.countainer .text span{
+  color: #6e2a36;
+  font-size: 22px;
+  margin-bottom: 15px;
+  padding-top: 6px;
+  margin-right: 100px;
+}
+section.first div.countainer .text a{
+  color: #f16449;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 30px;
+  background-color: #f4e0c9;
+  border-radius: 25px;
+}
+
+section.first div.countainer div.border{
+  margin: 35px 0px;
+  width: 90%;
+  height: 51px;
+  border-bottom: 2px solid #6e2a3617
+}
+
+section.first div.countainer h2.title{
+  width: 707px;
+  font-size: 35px;
+  color: #6e2a36;
+  font-weight: 900;
+  text-align: center;
+}
+
+section.first div.countainer h2.title span{
+  color: #f2654a;
+}
+
+section.first div.countainer h2.title img{
+  width: 35px;
+  height: 34px;
+  vertical-align: top;
+}
+
+section.first div.countainer div.how_work_countainer{
+  display: flex;
+  justify-content: center;
+}
+
+section.first div.countainer div.how_work{
+  display: flex;
+}
+section.first div.countainer div.how_work div{
+  margin-right: 15px;
+}
+
+section.first div.countainer div.how_work h5{
+  width: 291px;
+  color: #6e2a36;
+  font-size: 20px;
+  font-weight: 900;
+  margin:40px 0px 15px;
+}
+
+section.first div.countainer div.how_work h5 span{
+  color: #f2654a;
+}
+
+section.first div.countainer div.how_work div.third div h5{
+  display: inline;
+}
+
+section.first div.countainer div.how_work div.third div{
+  margin: 37px 0px 15px;
+}
+
+section.first div.countainer div.how_work h5 img{
+  display: inline;
+  width: 20px;
+  height: 20px;
+}
+
+section.first div.countainer div.how_work p{
+  width: 350px;
+  color: #6e2a36;
+  font-size: 17px;
+  margin: 0px 0px 15px;
 }
