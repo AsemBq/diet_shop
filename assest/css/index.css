@@ -1,113 +1,233 @@
-*{
-    font-family: 'Nunito Sans', sans-serif;
+* {
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
+body {
+  margin: 0;
+  padding-bottom: 900px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-
-.action_bar{
-    height: 45px;
-    color: #f2654a;
-    background-color: #6e2a36;
-    font-size: 17px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.action_bar {
+  height: 45px;
+  color: #f2654a;
+  background-color: #6e2a36;
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.action_bar span{
-    margin-left: -24px;
-    width: 1195px;
+.action_bar span {
+  margin-left: -24px;
+  width: 1195px;
 }
-
 
 /* Header Style */
 
-
-header{
-    background-color: #f9f2e4;
-    color: #6e2a36;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 91px;
+header > div.top {
+  background-color: #f9f2e4;
+  color: #6e2a36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91px;
 }
 
-nav{
-    display: flex;
-    
-    align-items: center;
+nav {
+  display: flex;
+
+  align-items: center;
 }
 
-header nav div.left{
-    width: 942.5px;
-    display: flex;
-    align-items: center;
+header div.top nav div.left {
+  width: 942.5px;
+  display: flex;
+  align-items: center;
 }
 
-header img{
-    width: 163px;
-    height: 40px;
-    /* margin-right: 20px; */
-    vertical-align: middle;
+header div.top img {
+  width: 163px;
+  height: 40px;
+  /* margin-right: 20px; */
+  vertical-align: middle;
 }
 
-header ul li{
-    display: inline-block;
-    padding: 0px 20px;
+header div.top ul li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-header ul :first-child{
-    /* padding-left: 0; */
+header div.top ul li a {
+  color: #6e2a36;
+  font-weight: 700;
 }
 
-header ul li a{
-    color: #6e2a36;
-    font-weight: 700;
+header div.top ul li.active a {
+  color: #f2654a;
 }
 
-header ul li.active a{
-    color: #f2654a;
+header div.top nav div.right {
+  padding: 0px 20px;
+  display: flex;
 }
 
-header nav div.right{
-    padding: 0px 20px;
-    display: flex;
+header div.top nav div.right i {
+  padding: 0px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+header div.top nav div.right div {
+  margin: 0px 10px;
+  cursor: pointer;
+}
+header div.top nav div.right div i {
+  padding: 0;
 }
 
-header nav div.right i{
-    padding: 0px 10px;
-    font-size: 20px;
-    cursor: pointer;
-}
-header nav div.right div{
-    margin: 0px 10px;
-    cursor: pointer;
-}
-header nav div.right div i{
-    padding: 0;
+header div.top nav div.right div span.heart-span {
+  margin-left: 2px;
 }
 
-header nav div.right div span.heart-span{
-    margin-left: 2px;
+header div.top nav div.right div span {
+  vertical-align: top;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 11px;
+  background-color: #75973a;
+  border-radius: 50%;
+  color: #ffffff;
+  margin-top: -5px;
 }
 
-header nav div.right div span{
-    vertical-align: top;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
-    text-align: center;
-    font-size: 11px;
-    background-color: #75973a;
-    border-radius: 50%;
-    color: #ffffff;
-    margin-top: -5px;
+header div.bottom {
+  display: flex;
+  height: 700px;
+}
+
+header div.bottom div.right,
+header div.bottom div.left {
+  width: 50%;
+  display: flex;
+}
+
+header div.bottom div.left {
+  background-color: #f0cfae;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  padding-left: 100px;
+}
+
+header div.bottom div.left .coountainer {
+  margin-bottom: 50px;
+  padding-right: 25px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header div.bottom div.left .coountainer .top {
+  position: relative;
+}
+
+header div.bottom div.left .coountainer .top p {
+  margin: 0;
+  color: #f2654a;
+  font-size: 50px;
+  width: 450px;
+  font-weight: 800;
+  line-height: 65px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 3;
+}
+
+header div.bottom div.left .coountainer img.circel {
+  background-color: transparent;
+  position: absolute;
+  left: 54px;
+  bottom: 122px;
+  width: 170px;
+  height: 69px;
+  z-index: 2;
+}
+
+header div.bottom div.left .coountainer img.emogi {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+header div.bottom div.left .link a {
+  display: inline-block;
+  font-size: 20px;
+  color: #f1ffba;
+  background-color: #75973a;
+  padding: 14px 50px;
+  border-radius: 29px;
+  font-weight: bold;
+}
+
+header div.bottom div.left .link span {
+  display: block;
+  margin-top: 25px;
+  color: #6e2a36;
+  font-size: 17px;
+}
+
+header div.bottom div.right img {
+  width: 100%;
+  object-fit: cover;
+}
+
+header div.last{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header div.last .top {
+  padding-top: 30px;
+  background-color: #f4e0c9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 115px;
+  z-index: 2;
+}
+
+header div.last .top h5 {
+  position: absolute;
+  font-size: 20px;
+  color: #f2654a;
+  margin: 0px 0px 25px;
+  font-weight: 900;
+}
+
+header div.last .top h5 span{
+  color: #6e2a36;
+}
+
+header div.square{
+  position: relative;
+  display: inline-block;
+  width: 71px;
+  height: 71px;
+  bottom: 50px;
+  transform: rotate(45deg);
+  background-color: #f4e0c9;
+  z-index: 0;
 }
