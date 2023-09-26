@@ -29,7 +29,7 @@ a {
 
 /* Header Style */
 
-header >div.top {
+header > div.top {
   background-color: #f9f2e4;
   color: #6e2a36;
   display: flex;
@@ -114,11 +114,11 @@ header div.bottom {
 
 header div.bottom div.right,
 header div.bottom div.left {
-    width: 50%;
-    display: flex;
+  width: 50%;
+  display: flex;
 }
 
-header div.bottom div.left{
+header div.bottom div.left {
   background-color: #f0cfae;
   justify-content: center;
   align-items: center;
@@ -126,15 +126,20 @@ header div.bottom div.left{
   padding-left: 100px;
 }
 
-header div.bottom div.left .coountainer{
+header div.bottom div.left .coountainer {
+  margin-bottom: 50px;
+  padding-right: 25px;
   width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 1;
 }
 
-header div.bottom div.left .coountainer .top p{
+header div.bottom div.left .coountainer .top {
+  position: relative;
+}
+
+header div.bottom div.left .coountainer .top p {
   margin: 0;
   color: #f2654a;
   font-size: 50px;
@@ -142,65 +147,87 @@ header div.bottom div.left .coountainer .top p{
   font-weight: 800;
   line-height: 65px;
   margin-bottom: 50px;
-  
-}
-
-header div.bottom div.left .coountainer img.circel{
-  background-color: transparent;
   position: relative;
-  left: 50px;
-  bottom: 300px;
-  width: 150px;
-  height: 81px;
   z-index: 3;
-
 }
 
-header div.bottom div.left .coountainer img.emogi{
+header div.bottom div.left .coountainer img.circel {
+  background-color: transparent;
+  position: absolute;
+  left: 54px;
+  bottom: 122px;
+  width: 170px;
+  height: 69px;
+  z-index: 2;
+}
+
+header div.bottom div.left .coountainer img.emogi {
   width: 56px;
   height: 56px;
   margin-bottom: 20px;
   margin-left: 15px;
 }
 
-header div.bottom div.left .link a{
+header div.bottom div.left .link a {
   display: inline-block;
   font-size: 20px;
   color: #f1ffba;
   background-color: #75973a;
-  padding: 12px 50px;
+  padding: 14px 50px;
   border-radius: 29px;
   font-weight: bold;
-
 }
 
-header div.bottom div.left .link span{
-  display:block;
-  margin-top: 30px;
+header div.bottom div.left .link span {
+  display: block;
+  margin-top: 25px;
   color: #6e2a36;
   font-size: 17px;
 }
 
-
-header div.bottom div.right img{
+header div.bottom div.right img {
   width: 100%;
   object-fit: cover;
 }
 
-header div.last {
-  padding-top: 40px;
+header div.last{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header div.last .top {
+  padding-top: 30px;
   background-color: #f4e0c9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75px;
+  position: relative;
+  width: 100%;
+  height: 115px;
+  z-index: 2;
 }
 
-header div.last h5{
+header div.last .top h5 {
+  position: absolute;
   font-size: 20px;
   color: #f2654a;
-  margin:0px 0px 15px;
-  font-weight: bold;
+  margin: 0px 0px 25px;
+  font-weight: 900;
+}
 
+header div.last .top h5 span{
+  color: #6e2a36;
+}
+
+header div.square{
+  position: relative;
+  display: inline-block;
+  width: 71px;
+  height: 71px;
+  bottom: 50px;
+  transform: rotate(45deg);
+  background-color: #f4e0c9;
+  z-index: 0;
 }
