@@ -5,7 +5,6 @@
 
 body {
   margin: 0;
-  padding-bottom: 900px;
 }
 
 a {
@@ -13,6 +12,9 @@ a {
 }
 h4{
   margin: 0;
+}
+ul{
+  margin: 0;padding: 0;
 }
 
 .action_bar {
@@ -287,7 +289,15 @@ section.first div.countainer .slider img{
   width: 100%;
   object-fit: cover;
   margin-top: -15px;
+  transition: scale 0.18s;
 }
+
+section.first div.countainer .slider img:hover{
+  width: 100%;
+  scale: 1.05;
+  z-index: 1;
+}
+
 section.first div.countainer .slider .top span{
   color: #ffffff;
   font-size: 12px;
@@ -652,10 +662,11 @@ section.secound div.countainer h2.last span{
 /*Footer Style  */
 
 footer{
-  background-color: #f8cfa0;
+  background-color: #f3d8bb;
   color: #6e2a36;
   display: flex;
   justify-content: center;
+  padding: 75px 0px;
 }
 
 footer h4{
@@ -665,6 +676,7 @@ footer h4{
 }
 
 footer p{
+  width: 265px;
   font-size: 17px;
   margin:0px 0px 15px;
 
@@ -672,12 +684,36 @@ footer p{
 
 footer a{
   color: #f16449;
+  font-weight: 500;
+}
+
+footer li{
+  margin: 0px 0px 25px;
 }
 
 footer .first,
-footer .secund{
+footer .secound{
   width: 280px;
+  margin-right: 25px;
 }
+footer .secound ul{
+  padding-left: 25px;
+  color: #75973a;
+}
+
+footer .first{
+  line-height: 28px;
+}
+
+footer .first .top{
+  margin-bottom: 30px;
+}
+
+footer .first .top p{
+  margin-bottom: 15px;
+}
+
+
 
 footer .third{
   display: flex;
@@ -685,25 +721,43 @@ footer .third{
   width: 585px;
 }
 
-footer div.email_countainer{
+footer .third div.email_countainer{
   width: 100%;
+  margin-bottom: 25px;
+  display: flex;
 }
 
-footer div.email_countainer .email {
-  width: 281px;
+footer .third div.email_countainer .email {
+  width: 50%;
   border-radius: 25px;
   background-color: #f4edd8;
   padding:  10px;
   border: 1px solid #e6b482;
+  margin-right: 20px;
 }
 
-footer div.email_countainer .button{
-  padding: 10px 30px;
+footer .third div.email_countainer .button{
+  padding: 9px 30px;
   color: #f1ffba;
   background-color: #75973a;
   border-radius: 25px;
-  width: 281px;
+  width: 50%;
   font-weight: 700;
   font-size: 18px;
   border: none;
+}
+
+footer .third p{
+  width: auto;
+  margin-bottom: 75px;
+}
+
+footer .third .payment{
+  display: flex;
+  align-items: center;
+
+}
+
+footer .third .payment span{
+  margin-right: 25px;
 }
